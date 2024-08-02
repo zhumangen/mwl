@@ -1,6 +1,8 @@
 FROM ruby:2.0.0-p648
+RUN rm -f /etc/apt/sources.list
+COPY sources.list /etc/apt/
 RUN apt-get update \
-  && apt-get -y --no-install-recommends install nodejs \
+  && apt-get -y --no-install-recommends --force-yes install nodejs \
   && rm -rf /var/lib/apt/lists/*
 WORKDIR /opt/mowoli
 COPY Gemfile Gemfile.lock ./
