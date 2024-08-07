@@ -1,0 +1,24 @@
+zh:
+  activerecord:
+    models:
+      modality: '设备类型'
+      order: '预约登记'
+    attributes:
+      modality:
+        name: '名称'
+        description: '描述'
+      order:
+        accession_number: '流水号'
+        patient_id: '病案号'
+        patients_birth_date: '患者出生日期'
+        patients_name: '患者姓名'
+        patients_sex: '患者性别'
+        referring_physicians_name: '转诊医生姓名'
+        requested_procedure_description: '请求的程序描述'
+      station:
+        receives_orders_via_hl7: '通过hl7接收登记'
+        character_set: '字符集'
+        modality: '设备类型'
+  orders:
+    new:
+      title: '新的登记'
